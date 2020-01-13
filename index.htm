@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.png" type="image">
+
+  <!-- Icon Library -->
+  <script src="https://kit.fontawesome.com/9337df7910.js" crossorigin="anonymous"></script>
+
+  <!-- Font Library -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <!-- Javascript -->
+  <script src="javascript.js"></script>
+
+
+  <title>Black Widow</title>
+</head>
+
+<body>
+  <!-- Landing Page -->
+  <div class="background">
+    <div class="row header-main">
+      <div class="social-link">
+        <a href="#">Fb</a>
+        <a href="#">Tw</a>
+        <a href="#">Ig</a>
+        <a href="#">Yt</a>
+      </div>
+      <button class="menu-icon" onclick="menuOpen()" id="menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Menu Contents -->
+      <div class="menu-content" id="menuContent">
+        <button class="menu-icon" onclick="menuClose()"><i class="fas fa-times"></i></button>
+        <br>
+        <div class="menu-item">
+          <div class="menu-item-txt">Plot
+          </div>
+          <div><a href="#plot"><i class="fas fa-sticky-note"></i></a></div>
+
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-txt">cast</div>
+          <div><a href="#cast"><i class="fas fa-theater-masks"></i></a></div>
+
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-txt">Crew</div>
+          <div><a href="#crew"><i class="fas fa-user-friends"></i></a></div>
+
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-txt">Trailer</div>
+          <div> <a href="#trailer"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="main-text">
+      <div class="main-text-title">Black Widow</div>
+      <div class="main-text-subtitle">"I can't let you in. I am Sorry."</div>
+    </div>
+
+    <div class="main-btn">
+      <div class="row">
+        <div class="book-tickets-btn"><a href="#">Book Tickets</a></div>
+        <div class="watch-trailer-btn"><a href="#trailer">Watch Trailer</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Plot Page -->
+  <div class="background plot-page" id="plot">
+    <div class="page-title">Plot</div>
+    <div class="page-content plot-page-content">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum error,
+      accusamus nulla saepe veritatis doloribus voluptatibus debitis, maxime
+      aperiam suscipit ipsa qui culpa cumque reprehenderit? Eum aliquid sequi
+      minima doloribus.
+    </div>
+  </div>
+
+  <!-- Cast Page -->
+  <div class="background cast-page" id="cast">
+    <div class="page-title">Cast</div>
+    <div class="page-subtitle">Our Amazing Cast !</div>
+    <!-- Cast Detail-->
+    <div class="page-content">
+      <div class="row">
+        <div class="cast-individual">
+          <img src="img/scarlett-johansson.png" alt="scarlett-johansson">
+          <div class="cast-individual-caption">
+            <div class="cast-indivdual-name">Scarlett Johansson
+            </div>
+            <hr class="cast-individual-caption-hr">
+            <div class="cast-individual-character">Natasha Romanoff / Black Widow</div>
+          </div>
+        </div>
+        <div class="cast-individual"><img src="img/florence-pugh.png" alt="florence-pugh">
+          <div class="cast-individual-caption">
+            <div class="cast-indivdual-name">Florence Pugh</div>
+            <hr class="cast-individual-caption-hr">
+            <div class="cast-individual-character">Yelena Belova</div>
+          </div>
+        </div>
+        <div class="cast-individual"><img src="img/rachel-weisz.png" alt="rachel-weisz">
+          <div class="cast-individual-caption">
+            <div class="cast-indivdual-name">Rachel Weisz</div>
+            <hr class="cast-individual-caption-hr">
+            <div class="cast-individual-character">Melina Vostokoff</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="cast-individual"><img src="img/david-harbour.png" alt="david-harbour">
+          <div class="cast-individual-caption">
+            <div class="cast-indivdual-name">David Harbour</div>
+            <hr class="cast-individual-caption-hr">
+            <div class="cast-individual-character">Alexei Shostakov / Red Guardian</div>
+          </div>
+        </div>
+        <div class="cast-individual"><img src="img/ot-fabengale.png" alt="ot-fabengale">
+          <div class="cast-individual-caption">
+            <div class="cast-indivdual-name">O-T Fagbenle</div>
+            <hr class="cast-individual-caption-hr">
+            <div class="cast-individual-character">Mason</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Crew Page -->
+  <div class="background crew-page" id="crew">
+    <div class="page-title">Crew</div>
+    <div class="page-subtitle"> The Movie has been Possible only by this amazing Crew !
+    </div>
+    <!-- Crew Detail -->
+    <div class="page-content crew-page-content">
+      <div class="crew-individual crew-individual-center">
+        <div class="row">
+          <div class="crew-individual-left-img">
+            <img src="img/director-cate-shortland.png" alt="director-cate-shortland">
+          </div>
+          <div class="crew-individual-caption">
+            <div class="crew-indivdual-name">Cate Shortland</div>
+            <hr class="crew-individual-caption-hr">
+            <div class="crew-individual-post">Director</div>
+          </div>
+        </div>
+      </div><br>
+      <div class="crew-individual crew-individual-left">
+        <div class="row">
+          <div class="crew-individual-left-img">
+            <img src="img/stan-lee.png" alt="stan-lee">
+          </div>
+          <div class="crew-individual-caption">
+            <div class="crew-indivdual-name">Stan Lee</div>
+            <hr class="crew-individual-caption-hr">
+            <div class="crew-individual-post">Comic Book & Character</div>
+          </div>
+        </div>
+      </div>
+      <div class="crew-individual crew-individual-right">
+        <div class="row">
+          <div class="crew-individual-right-img">
+            <img src="img/ned-benson.png" alt="ned-benson">
+          </div>
+          <div class="crew-individual-caption">
+            <div class="crew-indivdual-name">Ned Benson</div>
+            <hr class="crew-individual-caption-hr">
+            <div class="crew-individual-post">Screenplay</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="crew-individual crew-individual-left">
+        <div class="row">
+          <div class="crew-individual-left-img">
+            <img src="img/charles-wood.png" alt="charles-wood">
+          </div>
+          <div class="crew-individual-caption">
+            <div class="crew-indivdual-name">Charles Wood</div>
+            <hr class="crew-individual-caption-hr">
+            <div class="crew-individual-post">Production Design</div>
+          </div>
+        </div>
+      </div>
+      <div class="crew-individual crew-individual-right">
+        <div class="row">
+          <div class="crew-individual-right-img">
+            <img src="img/kevin-feige-producer.png" alt="kevin-feige-producer">
+          </div>
+          <div class="crew-individual-caption">
+            <div class="crew-indivdual-name">Kevin Feige</div>
+            <hr class="crew-individual-caption-hr">
+            <div class="crew-individual-post">Producer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trailer -->
+  <div class="background trailer-page" id="trailer">
+
+    <div class="page-title" style="font-size: 45px;">A Production of Marvel Studios !</div>
+    <div class="page-content trailer-box">
+      <iframe height="400px" width="50%" src="https://www.youtube.com/embed/RxAtuMu_ph4" frameborder="0">
+      </iframe>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+
+
+  <div class="footer">
+    <div class="row footer-content">
+      <div class="footer-links">
+        © 2019 <a href="#"> Marvel Studios</a>|
+
+        <a href="#"> Terms & Conditions </a>|
+
+        <a href="#"> Privacy Policy</a>
+      </div>
+      <div class="developer-link">
+        <div class="developer-link-before">
+          &#60&#92&#62
+        </div>
+        <div class="developer-link-after">
+
+          &#60&#92Kaal Vairab&#62
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
