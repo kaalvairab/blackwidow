@@ -71,27 +71,31 @@ background-color: black;
 
 .menu-content{
   float: right;
+  margin-right: 5%;
   font-size: 45px;
   right: 0;
+  display: none;
+  cursor: pointer;
+  position: fixed;
 }
 
 .menu-item{
   padding-top: 5px;
-  display:hidden ;
   display: flex;
   flex-direction: row;
+
+
 }
 
 
 .menu-item-txt{
   font-size: 24px;
   text-align: left;
-
-  align-items: center;
 }
 
-.menu-item>div{
-text-align: right;
+.menu-item>div>a>i{
+  text-align: right;
+  right: 0;
 }
 
 /* Main Text */
