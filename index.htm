@@ -18,18 +18,59 @@
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
 
-  <!-- Javascript -->
-  <script src="javascript.js"></script>
+  <!-- ANIMATE STYLE-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+
+  <!-- AOS LIBRARY -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 
 
   <title>Black Widow</title>
 </head>
 
 <body>
+  <div class="scroll animate__animated animate__bounceInUp">
+    <a href="#top"><i class="fas fa-arrow-circle-up"></i></a>
+    <br>
+    TOP
+
+  </div>
+
+  <!-- Menu Contents -->
+  <div class="scroll menu-content animate__animated animate__bounceInLeft" id="menuContent">
+
+    <div class="menu-item">
+      <div><a href="#plot"><i class="fas fa-sticky-note"></i></a></div>
+      <div class="menu-item-txt animate__animated animate__bounceInLeft">Plot
+      </div>
+    </div>
+
+    <div class="menu-item">
+      <div><a href="#cast"><i class="fas fa-theater-masks"></i></a></div>
+      <div class="menu-item-txt animate__animated animate__bounceInLeft">cast</div>
+    </div>
+
+    <div class="menu-item">
+      <div><a href="#crew"><i class="fas fa-user-friends"></i></a></div>
+      <div class="menu-item-txt animate__animated animate__bounceInLeft">Crew</div>
+    </div>
+
+    <div class="menu-item">
+      <div> <a href="#trailer"><i class="fab fa-youtube"></i></a> </div>
+      <div class="menu-item-txt animate__animated animate__bounceInLeft">Trailer</div>
+    </div>
+
+  </div>
+  <!-- END OF MENU CONTENT -->
+
   <!-- Landing Page -->
-  <div class="background">
+  <div class="background" id="top">
     <div class="row header-main">
       <div class="social-link">
         <a href="#">Fb</a>
@@ -37,57 +78,28 @@
         <a href="#">Ig</a>
         <a href="#">Yt</a>
       </div>
-      <button class="menu-icon" onclick="menuOpen()" id="menu">
-        <i class="fas fa-bars"></i>
-      </button>
 
-      <!-- Menu Contents -->
-      <div class="menu-content" id="menuContent">
-        <button class="menu-icon" onclick="menuClose()"><i class="fas fa-times"></i></button>
-        <br>
-        <div class="menu-item">
-          <div class="menu-item-txt">Plot
-          </div>
-          <div><a href="#plot"><i class="fas fa-sticky-note"></i></a></div>
 
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-txt">cast</div>
-          <div><a href="#cast"><i class="fas fa-theater-masks"></i></a></div>
 
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-txt">Crew</div>
-          <div><a href="#crew"><i class="fas fa-user-friends"></i></a></div>
 
-        </div>
-        <div class="menu-item">
-          <div class="menu-item-txt">Trailer</div>
-          <div> <a href="#trailer"><i class="fab fa-youtube"></i></a>
-          </div>
-        </div>
-
+      <div class="main-text">
+        <div class="main-text-title">Black Widow</div>
+        <div class="main-text-subtitle">"I can't let you in. I am Sorry."</div>
       </div>
-    </div>
 
-
-    <div class="main-text">
-      <div class="main-text-title">Black Widow</div>
-      <div class="main-text-subtitle">"I can't let you in. I am Sorry."</div>
-    </div>
-
-    <div class="main-btn">
-      <div class="row">
-        <div class="book-tickets-btn"><a href="#">Book Tickets</a></div>
-        <div class="watch-trailer-btn"><a href="#trailer">Watch Trailer</a></div>
+      <div class="main-btn">
+        <div class="row">
+          <div class="book-tickets-btn"><a href="#">Book Tickets</a></div>
+          <div class="watch-trailer-btn"><a href="#trailer">Watch Trailer</a></div>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Plot Page -->
   <div class="background plot-page" id="plot">
-    <div class="page-title">Plot</div>
-    <div class="page-content plot-page-content">
+    <div class="page-title" data-aos="fade-up">Plot</div>
+    <div class="page-content plot-page-content" data-aos="fade-up">
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum error,
       accusamus nulla saepe veritatis doloribus voluptatibus debitis, maxime
       aperiam suscipit ipsa qui culpa cumque reprehenderit? Eum aliquid sequi
@@ -97,12 +109,12 @@
 
   <!-- Cast Page -->
   <div class="background cast-page" id="cast">
-    <div class="page-title">Cast</div>
-    <div class="page-subtitle">Our Amazing Cast !</div>
+    <div class="page-title" data-aos="fade-up">Cast</div>
+    <div class="page-subtitle" data-aos="fade-up">Our Amazing Cast !</div>
     <!-- Cast Detail-->
     <div class="page-content">
       <div class="row">
-        <div class="cast-individual">
+        <div class="cast-individual" data-aos="fade-right">
           <img src="img/scarlett-johansson.png" alt="scarlett-johansson">
           <div class="cast-individual-caption">
             <div class="cast-indivdual-name">Scarlett Johansson
@@ -111,14 +123,14 @@
             <div class="cast-individual-character">Natasha Romanoff / Black Widow</div>
           </div>
         </div>
-        <div class="cast-individual"><img src="img/florence-pugh.png" alt="florence-pugh">
+        <div class="cast-individual" data-aos="fade-left"><img src="img/florence-pugh.png" alt="florence-pugh">
           <div class="cast-individual-caption">
             <div class="cast-indivdual-name">Florence Pugh</div>
             <hr class="cast-individual-caption-hr">
             <div class="cast-individual-character">Yelena Belova</div>
           </div>
         </div>
-        <div class="cast-individual"><img src="img/rachel-weisz.png" alt="rachel-weisz">
+        <div class="cast-individual" data-aos="fade-up"><img src="img/rachel-weisz.png" alt="rachel-weisz">
           <div class="cast-individual-caption">
             <div class="cast-indivdual-name">Rachel Weisz</div>
             <hr class="cast-individual-caption-hr">
@@ -128,14 +140,14 @@
       </div>
       <div class="row">
 
-        <div class="cast-individual"><img src="img/david-harbour.png" alt="david-harbour">
+        <div class="cast-individual" data-aos="fade-right"><img src="img/david-harbour.png" alt="david-harbour">
           <div class="cast-individual-caption">
             <div class="cast-indivdual-name">David Harbour</div>
             <hr class="cast-individual-caption-hr">
             <div class="cast-individual-character">Alexei Shostakov / Red Guardian</div>
           </div>
         </div>
-        <div class="cast-individual"><img src="img/ot-fabengale.png" alt="ot-fabengale">
+        <div class="cast-individual" data-aos="fade-left"><img src="img/ot-fabengale.png" alt="ot-fabengale">
           <div class="cast-individual-caption">
             <div class="cast-indivdual-name">O-T Fagbenle</div>
             <hr class="cast-individual-caption-hr">
@@ -150,14 +162,14 @@
 
   <!-- Crew Page -->
   <div class="background crew-page" id="crew">
-    <div class="page-title">Crew</div>
-    <div class="page-subtitle"> The Movie has been Possible only by this amazing Crew !
+    <div class="page-title" data-aos="fade-up">Crew</div>
+    <div class="page-subtitle" data-aos="fade-up"> The Movie has been Possible only by this amazing Crew !
     </div>
     <!-- Crew Detail -->
     <div class="page-content crew-page-content">
       <div class="crew-individual crew-individual-center">
         <div class="row">
-          <div class="crew-individual-left-img">
+          <div class="crew-individual-left-img" data-aos="fade-up">
             <img src="img/director-cate-shortland.png" alt="director-cate-shortland">
           </div>
           <div class="crew-individual-caption">
@@ -167,7 +179,7 @@
           </div>
         </div>
       </div><br>
-      <div class="crew-individual crew-individual-left">
+      <div class="crew-individual crew-individual-left" data-aos="fade-right">
         <div class="row">
           <div class="crew-individual-left-img">
             <img src="img/stan-lee.png" alt="stan-lee">
@@ -179,7 +191,7 @@
           </div>
         </div>
       </div>
-      <div class="crew-individual crew-individual-right">
+      <div class="crew-individual crew-individual-right" data-aos="fade-left">
         <div class="row">
           <div class="crew-individual-right-img">
             <img src="img/ned-benson.png" alt="ned-benson">
@@ -192,7 +204,7 @@
         </div>
 
       </div>
-      <div class="crew-individual crew-individual-left">
+      <div class="crew-individual crew-individual-left" data-aos="fade-right">
         <div class="row">
           <div class="crew-individual-left-img">
             <img src="img/charles-wood.png" alt="charles-wood">
@@ -204,7 +216,7 @@
           </div>
         </div>
       </div>
-      <div class="crew-individual crew-individual-right">
+      <div class="crew-individual crew-individual-right" data-aos="fade-left">
         <div class="row">
           <div class="crew-individual-right-img">
             <img src="img/kevin-feige-producer.png" alt="kevin-feige-producer">
@@ -222,7 +234,7 @@
   <!-- Trailer -->
   <div class="background trailer-page" id="trailer">
 
-    <div class="page-title" style="font-size: 45px;">A Production of Marvel Studios !</div>
+    <div class="page-title" style="font-size: 45px;" data-aos="fade-up">A Production of Marvel Studios !</div>
     <div class="page-content trailer-box">
       <iframe height="400px" width="50%" src="https://www.youtube.com/embed/RxAtuMu_ph4?" frameborder="0">
       </iframe>
@@ -256,7 +268,13 @@
   </div>
 
 
+  <!-- Javascript -->
+  <script src="javascript/javascript.js"></script>
 
+  <!-- AOS LIBRARY -->
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
